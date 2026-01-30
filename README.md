@@ -1,9 +1,3 @@
-这是一份为你定制的 `README.md`，已经包含了我们刚才讨论的所有功能点（纯文本消息、KV 去重、日志存储、时区修正）。
-
-你可以直接复制下面的内容，保存为 `README.md` 文件放在你的 GitHub 仓库里。
-
----
-
 # 📨 iOS SMS Forwarder to WeChat (Cloudflare Worker)
 
 这是一个部署在 **Cloudflare Workers** 上的轻量级脚本，配合 iOS 快捷指令自动化，实现将 iPhone 收到的短信（特别是验证码）毫秒级转发到 **企业微信（WeCom）**。
