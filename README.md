@@ -2,8 +2,6 @@
 
 这是一个部署在 **Cloudflare Workers** 上的轻量级脚本，配合 iOS 快捷指令自动化，实现将 iPhone 收到的短信（特别是验证码）毫秒级转发到 **企业微信（WeCom）**。
 
-> **特别优化**：本项目使用企业微信的 `text`（纯文本）消息接口。相比 `Markdown` 或 `TextCard` 消息，纯文本模式在**普通微信（非企业微信APP）**中也能完美显示，且无点击跳转，防止误触，体验更佳。
-
 ## ✨ 功能特性
 
 * **☁️ Serverless 部署**：完全依托 Cloudflare Workers，免费版额度足够个人使用，无需购买服务器。
@@ -107,10 +105,6 @@ A: 请在 `worker.js` 代码顶部找到 `const TIME_ZONE`，修改为你所在�
 ### Q: 哪里查看备份的短信？
 
 A: 登录 Cloudflare -> **Storage & Databases** -> **KV** -> 点击 `SMS_CACHE` -> **View**。以 `log:` 开头的 Key 就是备份的短信。
-
-### Q: 为什么普通微信显示“不支持的消息类型”？
-
-A: 请确保你使用的是本项目的最新代码（`msgtype` 为 `text`）。旧版本使用的 `markdown` 或 `textcard` 在普通微信上可能无法正常渲染。
 
 ## 📄 License
 
